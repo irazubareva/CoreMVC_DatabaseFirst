@@ -6,6 +6,7 @@ namespace CoreMVC_DatabaseFirst.Models
     {
         public string Name { get; set; }
         public string Adress { get; set; }
+<<<<<<< HEAD
         public int Age { get; set; }
         public int Weight { get; set; }
 
@@ -16,11 +17,23 @@ namespace CoreMVC_DatabaseFirst.Models
             Age = age;
             Weight = weight;
         
+=======
+        public decimal Age { get; set; }
+        public string Weight { get; set; }
+
+        public Person(string name)
+        {
+            Name= name;
+>>>>>>> third
         }
 
         public override string ToString()
         {
             return Name;
+        }
+        public void Print()
+        {
+
         }
     }
 }
